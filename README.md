@@ -33,11 +33,15 @@
 * exit
 
 `具体执行流程`  
-1.
-2.  
-3.  
+1. Worker循环发送RPC请求
+2. Corrdinator分配Worker任务（Mapindex,Reduceindex,Type）
+3. Worker执行结束
 ## data race
 - coordinate.state 产生的数据竞争（上锁）  
 - 部分测试失败!原因：输出的格式不对！  
 ## Result
 ![结果](https://github.com/MingweiGuo/DistributeSystem/blob/main/picture/lab1_test.png)
+
+## Todo
+**使用channel进行通信**  
+**goroutine**
