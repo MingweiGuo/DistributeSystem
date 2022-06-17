@@ -21,8 +21,21 @@
   - Filename
   - Mapindex
   - Reduceindex
-  - Stamp 分布式唯一标识符
+  - Stamp 分布式唯一标识符  
+ 
+`命名格式`
+* **stamp-mr-mapindex-rindex**
 
+`Type状态机`
+* map
+* reduce
+* wait
+* exit
+
+`具体执行流程`  
+1.
+2.  
+3.  
 ## data race
 - coordinate.state 产生的数据竞争（上锁）  
 - 部分测试失败!原因：输出的格式不对！  
